@@ -16,11 +16,7 @@ spec:
     spec:
       containers:
       - name: mongo
-        image: mongo:6.0
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "250m"
+        image: mongo:latest
         ports:
         - containerPort: 27017
         env: #env variables
